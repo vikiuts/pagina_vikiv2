@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi primera web</title>
+    <style>
+      body {
+        background-color: lightpink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+      }
+
+      img {
+        width: 150px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      h1 {
+        color: #d63384;
+      }
+
+      p {
+        color: #5c1a4f;
+        font-size: 18px;
+      }
+
+      a {
+        color: #b30059;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #ff1493;
+      }
+
+      #rickroll {
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+    <script>
+      function mostrarRickRoll() {
+        document.getElementById("rickroll").style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Bienvenida a mi web</h1>
+    <p>Hola, soy Viki y estoy aprendiendo HTML ✨</p>
+
+    <img src="https://i.pinimg.com/736x/6c/14/fa/6c14faa1890e3d2ee95a4f4ae62a73f5.jpg" alt="Imagen linda">
+
+    <p>Visita <a href="https://www.linkedin.com/in/francescadiaz/">Mi LinkedIn</a> para saber más de mí.</p>
+
+    <button onclick="mostrarRickRoll()">Si lo apretás, eri gay</button>
+
+    <div id="rickroll">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" 
+              title="Rick Astley - Never Gonna Give You Up"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
